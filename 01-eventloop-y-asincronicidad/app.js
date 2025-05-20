@@ -26,7 +26,7 @@ function updateOrderStatus(order, status) {
 async function processOrder(order) {
     const preparacion = new Promise((resolve) => {
         setTimeout(() => {
-            resolve("Orden lista");
+            resolve("Completado");
         }, 10000); // Simula un tiempo de preparación de 10 segundos
     });
     const status = await preparacion;
